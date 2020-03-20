@@ -54,9 +54,9 @@ public class CDRGR001Impl extends CDRGR001Abstract {
 				+ "&destination=" + destino + "&key=AIzaSyByPeqwGB3sb1BXGhEkzfzmnOodqugTM6Q", String.class);
 		
 		JsonNode jsonNode = objectMapper.readValue(json, JsonNode.class);
-		JsonNode distancia = jsonNode.get("routes").get(2).get(1).get("distance").get("value");
+		JsonNode distancia = jsonNode.get("routes").get(0).get(0).get("legs").get(0).get("distance").get("value");
 		
-		int val = 2000*(Integer.parseInt(distancia.getTextValue()));
+		int val = 2*(Integer.parseInt(distancia.getTextValue()));
 	
 		return Integer.toString(val);
 	}
@@ -77,7 +77,7 @@ public class CDRGR001Impl extends CDRGR001Abstract {
 				+ "&destination=" + destino + "&key=AIzaSyByPeqwGB3sb1BXGhEkzfzmnOodqugTM6Q", String.class);
 		
 		JsonNode jsonNode = objectMapper.readValue(json, JsonNode.class);
-		JsonNode tiempo = jsonNode.get("routes").get(2).get(1).get("duration").get("text");
+		JsonNode tiempo = jsonNode.get("routes").get(0).get(0).get("legs").get(0).get("duration").get("text");
 		
 		return tiempo.getTextValue();
 	}
@@ -98,7 +98,7 @@ public class CDRGR001Impl extends CDRGR001Abstract {
 				+ "&destination=" + destino + "&key=AIzaSyByPeqwGB3sb1BXGhEkzfzmnOodqugTM6Q", String.class);
 		
 		JsonNode jsonNode = objectMapper.readValue(json, JsonNode.class);
-		JsonNode distancia = jsonNode.get("routes").get(2).get(1).get("distance").get("text");
+		JsonNode distancia = jsonNode.get("routes").get(2).get(1).get("duration").get("text");
 			
 		return distancia.getTextValue();
 	}
