@@ -16,7 +16,8 @@
 	<description>APX que calcula valor de una ruta en pesos.</description>
 	
     <properties>
-        <apx.core.online.version>0.0.0</apx.core.online.version>
+        <apx.core.online.version>5.8.13</apx.core.online.version>
+        <elara.version>5.8.13</elara.version>
         <outputDirectoryDTOs>../../../target/dtos</outputDirectoryDTOs>
         <outputDirectoryLibraries>../../../target/libraries</outputDirectoryLibraries>
         <outputDirectoryTransactions>../../../target/transactions</outputDirectoryTransactions>
