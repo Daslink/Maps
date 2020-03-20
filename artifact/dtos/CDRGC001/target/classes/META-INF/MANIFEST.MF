@@ -1,5 +1,5 @@
 Manifest-Version: 1.0
-Bnd-LastModified: 1584654773299
+Bnd-LastModified: 1584710854361
 Build-Jdk: 1.8.0_91
 Built-By: hdramos
 Bundle-Category: dto
@@ -9,8 +9,7 @@ Bundle-Name: CDRGC001
 Bundle-SymbolicName: CDRGC001-0.0.0
 Bundle-Version: 0.0.0
 Created-By: Apache Maven Bundle Plugin
-Export-Package: com.bbva.cdrg.dto.rutas;uses:="com.bbva.apx.dto,org.apac
- he.commons.lang3.builder";version="0.0.0"
-Import-Package: com.bbva.apx.dto;version="[1.0,2)",org.apache.commons.la
- ng3.builder;version="[3.2,4)"
+Export-Package: com.bbva.cdrg.dto.rutas;uses:="com.bbva.apx.dto";version
+ ="0.0.0"
+Import-Package: com.bbva.apx.dto;version="[1.0,2)"
 Tool: Bnd-1.50.0
